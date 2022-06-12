@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Anime Diary | Anime hinzufügen</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+        <link rel="stylesheet" href="{{url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+    </head>
+    <body>
+        <header>
+            <nav id="main-nav">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{{ url_for('watchlist_vorschlag')}}">Anime Auswahl</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('watchlist_empfehlung')}}">Anime hinzufügen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('test')}}">Filmauswahl</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+            <div class="container mt-5">
+            <h1>Willkommen zum {{ name }}</h1>
+            <a href="{{ url_for('test')}}">Test</a>
+                <p>Füge einen neuen Anime hinzu.</p>
+                <form method="POST">
+                      <div class="form-group">
+                        <label for="AnimeName">Wie heisst der Anime?</label>
+                        <input type="text" name="animename" class="form-control" id="AnimeName" aria-describedby="NewAnime" placeholder="Animename eingeben">
+                      </div>
+                      <div class="form-group">
+                        <label for="Erscheinungsjahr">Wann ist der Anime erstmals erschienen?</label>
+                        <input type="text" name="erscheinungsjahr" class="form-control" id="Erscheinungsjahr" placeholder="Erscheinungsjahr eingeben">
+                      </div>
+                      <div class="form-group">
+                        <label for="Dauer">Bitte gib die Anzahl der Folgen an.</label>
+                        <input type="text" name="folgenanzahl" class="form-control" id="Dauer" aria-describedby="Dauer" placeholder="Folgenanzahl eingeben">
+                      </div>
+                    <br>
+                     <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <br>
+            </div>
+    </body>
+</html>

@@ -12,7 +12,7 @@ def erfassung_ausgeben():
     if request.method == 'GET':
         return render_template('Hinzufügen.html')
     if request.method == 'POST':
-        erfasste_eingabe = request.form['Name Anime']
+        erfasste_eingabe = request.form['Updaten.html']
         rueckgabe_string = "Eingaben für " + erfasste_eingabe + " werden gespeichert und der Filmauswahl hinzugefügt!"
         return rueckgabe_string
 
@@ -20,6 +20,10 @@ def erfassung_ausgeben():
 @app.route("/auswahl")
 def watchlist_vorschlag():
     return render_template('Auswahl.html', vorschlag="Anime auswählen")
+
+@app.route("/updaten")
+def status_update():
+    return render_template('Updaten.html', vorschlag="Status updaten")
 
 
 @app.route("/test")

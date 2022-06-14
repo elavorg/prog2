@@ -1,20 +1,22 @@
 from flask import Flask, render_template, request
 
-app = Flask("Hello World")
+app = Flask("Anime Diary")
 
-@app.route("/hinzufügen")
-def watchlist_empfehlung():
-    return render_template('Hinzufügen.html', name="Anime Diary")
+@app.route("/hinzufuegen")
+def anime_hinzufuegen():
+    return render_template('Hinzufuegen.html', name="Anime Diary")
 
 
-@app.route("/hinzufügen", methods=['GET', 'POST'])
-def erfassung_ausgeben():
-    if request.method == 'GET':
-        return render_template('Hinzufügen.html')
+@app.route("/hinzufuegen/", methods=['GET', 'POST'])
+def anime_speichern():
     if request.method == 'POST':
-        erfasste_eingabe = request.form['Updaten.html']
-        rueckgabe_string = "Eingaben für " + erfasste_eingabe + " werden gespeichert und der Filmauswahl hinzugefügt!"
+        anime_name = request.form['animename']
+        anime_erscheinungsjahr = request.form['erscheinungsjahr']
+        anzahl_folgen = request.form['folgenanzahl']
+        rueckgabe_string = "Der Anime " + anime_name + " wurde gespeichert!"
         return rueckgabe_string
+    else:
+        return render_template('Hinzufuegen.html')
 
 
 @app.route("/auswahl")
@@ -24,11 +26,6 @@ def watchlist_vorschlag():
 @app.route("/updaten")
 def status_update():
     return render_template('Updaten.html', vorschlag="Status updaten")
-
-
-@app.route("/test")
-def test():
-    return "passt!"
 
 
 if __name__ == "__main__":

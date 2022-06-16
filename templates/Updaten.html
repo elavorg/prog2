@@ -1,27 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Anime Diary | Status update</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
-        <link rel="stylesheet" href="{{url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
-    </head>
-    <body>
-        <header>
-            <nav id="main-nav">
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="{{ url_for('watchlist_vorschlag')}}">Anime Auswahl</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('anime_hinzufuegen')}}">Anime hinzufügen</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
+{% extends "Header.html" %}
+{% block content %}
             <div class="container mt-5">
-            <h1>Willkommen zum {{ name }}</h1>
                 <p>Bearbeite deinen Folgenstatus:</p>
                       <div class="form-group">
                         <label for="Dauer">Bitte gib die Anzahl der Folgen an.</label>
@@ -32,5 +11,4 @@
                 </form>
                 <br>
             </div>
-    </body>
-</html>
+{% endblock %}

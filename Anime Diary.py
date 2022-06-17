@@ -13,6 +13,7 @@ def anime_speichern():
         anime_name = request.form['animename']
         anime_erscheinungsjahr = request.form['erscheinungsjahr']
         anzahl_folgen = request.form['folgenanzahl']
+        beschreibung = request.form['beschreibung']
         rueckgabe_string = "Der Anime " + anime_name + " wurde gespeichert!"
         return rueckgabe_string
     else:

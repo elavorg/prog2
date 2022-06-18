@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+import daten
 
 app = Flask("Anime Diary")
 
@@ -14,10 +15,15 @@ def anime_speichern():
         anime_erscheinungsjahr = request.form['erscheinungsjahr']
         anzahl_folgen = request.form['folgenanzahl']
         beschreibung = request.form['beschreibung']
+
+        daten.speichern(anime_name, anime_erscheinungsjahr, anzahl_folgen, beschreibung)
         rueckgabe_string = "Der Anime " + anime_name + " wurde gespeichert!"
-        return rueckgabe_string
+        return render_template('Hinzufuegen.html', anzeige=rueckgabe_string)
     else:
         return render_template('Hinzufuegen.html')
+
+
+
 
 
 @app.route("/auswahl")

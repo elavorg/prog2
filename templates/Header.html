@@ -11,7 +11,7 @@
             <nav id="main-nav">
                 <ul class="nav justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link active" href="{{ url_for('watchlist_vorschlag')}}">Anime Auswahl</a>
+                        <a class="nav-link active" href="{{ url_for('anime_auswahl')}}">Anime Auswahl</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('anime_hinzufuegen')}}">Anime hinzufügen</a>
@@ -19,9 +19,6 @@
                 </ul>
             </nav>
         </header>
-            <div class="container mt-5">
-            <h1>Willkommen zum {{ name }}</h1>
-            </div>
             {% block content %}
             {% endblock %}
     </body>

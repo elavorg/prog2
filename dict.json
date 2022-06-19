@@ -1,44 +1,14 @@
 {
-    "Naruto": {
-        "anime_name": "Naruto",
-        "erscheinungsjahr": "2002",
-        "folgen_anzahl": "220",
-        "beschreibung": "Naruto Uzumaki, ein jugendlicher Ninja, kämpft auf der Suche nach Anerkennung und träumt davon, der Hokage, der Anführer und stärkste Ninja des Dorfes zu werden."
-    },
-    "One Piece": {
-        "anime_name": "One Piece",
-        "erscheinungsjahr": "1999",
-        "folgen_anzahl": "1023",
-        "beschreibung": "Folgt den Abenteuern von Monkey D. Luffy und seinen Freunden, um den größten Schatz aller Zeiten zu finden, den der legendäre Pirat Gol D Roger hinterlassen hat."
-    },
-    "Attack on Titan": {
-        "anime_name": "Attack on Titan",
-        "erscheinungsjahr": "2013",
-        "folgen_anzahl": "96",
-        "beschreibung": "Nachdem seine Heimatstadt zerstört und seine Mutter getötet wurde, schwört der junge Eren Yeager, die Erde von den riesigen humanoiden Titanen zu säubern, die die Menschheit an den Rand des Aussterbens gebracht haben."
-    },
-    "Detective Conan": {
-        "anime_name": "Detective Conan",
-        "erscheinungsjahr": "1996",
-        "folgen_anzahl": "152",
-        "beschreibung": "Die Fälle eines Detektivs, dessen physisches Alter chemisch zu dem eines vorpubertären Jungen umgekehrt wurde, der aber seine wahre geistige Entwicklung verbergen muss."
-    },
-    "Hunter x Hunter": {
-        "anime_name": "Hunter x Hunter",
-        "erscheinungsjahr": "2011",
-        "folgen_anzahl": "148",
-        "beschreibung": "Gon Freecss strebt danach, ein Jäger zu werden, ein außergewöhnliches Wesen, das zur Größe fähig ist. Mit seinen Freunden und seinem Potenzial sucht er nach seinem Vater, der ihn verließ, als er jünger war."
-    },
-    "Haikyu!!": {
-        "anime_name": "Haikyu!!",
-        "erscheinungsjahr": "2014",
-        "folgen_anzahl": "88",
-        "beschreibung": "Ein bestimmtes Ereignis weckte in Shouyou Hinata die Liebe zum Volleyball. Fest entschlossen, in die Fußstapfen seines Vorbildes dem kleinen Titan zu treten, beginnt er seinen Weg mit dem Beitritt ins Volleyballteam seiner Oberschule."
-    },
-    "My Hero Academia": {
-        "anime_name": "My Hero Academia",
-        "erscheinungsjahr": "2016",
-        "folgen_anzahl": "117",
-        "beschreibung": "Ein Superhelden-liebender Junge ohne Kräfte ist entschlossen, sich in einer angesehenen Heldenakademie einzuschreiben und zu erfahren, was es wirklich bedeutet, ein Held zu sein."
-    }
-    }
+  "Naruto": {
+    "anime_name": "Naruto",
+    "erscheinungsjahr": "2002",
+    "folgen_anzahl": "220",
+    "beschreibung": "Naruto Uzumaki, ein jugendlicher Ninja, k\u00c3\u00a4mpft auf der Suche nach Anerkennung und tr\u00c3\u00a4umt davon, der Hokage, der Anf\u00c3\u00bchrer und st\u00c3\u00a4rkste Ninja des Dorfes zu werden."
+  },
+  "One Piece": {
+    "anime_name": "One Piece",
+    "erscheinungsjahr": "1999",
+    "folgen_anzahl": "1023",
+    "beschreibung": "Folgt den Abenteuern von Monkey D. Luffy und seinen Freunden, um den gr\u00c3\u00b6\u00c3\u0178ten Schatz aller Zeiten zu finden, den der legend\u00c3\u00a4re Pirat Gol D Roger hinterlassen hat."
+  }
+}

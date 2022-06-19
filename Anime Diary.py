@@ -26,9 +26,16 @@ def anime_speichern():
 
 
 
-@app.route("/auswahl")
-def watchlist_vorschlag():
-    return render_template('Auswahl.html', vorschlag="Anime auswählen")
+@app.route("/auswahl", methods=['GET', 'POST'])
+def anime_auswahl():
+    gespeicherte_animes = daten.anime_laden()
+
+    gespeicherte_animes_liste = ""
+    for keyword, value in gespeicherte_animes.items():
+        zeile = keyword + ": " + value + "<br>"
+        gespeicherte_animes_liste += zeile
+
+    return render_template('Auswahl.html', gespeicherte_animes=gespeicherte_animes)
 
 @app.route("/updaten")
 def status_update():

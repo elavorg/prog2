@@ -1,14 +1,19 @@
 {% extends "Header.html" %}
 {% block content %}
     <div class="container">
-        <h1>Willkommen zum {{ name }}</h1>
-    </div>
+        <h1>Anime Auswahl</h1>
+    #
     <div>
-    <h2>Hier siehst du die Auswahl deiner laufenden Animes.</h2>
+    <h3>Hier siehst du die Auswahl deiner laufenden Animes.</h3>
     </div>
     <div class="column">
-        {% for keyword, value in gespeicherte_animes.items() %)
-        {{keyword}}
-        {% endfor %)
+        <!--{{gespeicherte_animes_liste}}<!-->
+        {% for key, value in gespeicherte_animes.items() %}
+            <h2>{{key}}</h2>
+            {% for key, value2 in value.items() %}
+            <p>{{ key }} : {{ value2 }}</p>
+            {% endfor %}
+        {% endfor %}
+    </div>
     </div>
 {% endblock %}

@@ -1,14 +1,20 @@
 {% extends "Header.html" %}
 {% block content %}
             <div class="container mt-5">
-                <p>Bearbeite deinen Folgenstatus:</p>
-                      <div class="form-group">
-                        <label for="Dauer">Bitte gib die Anzahl der Folgen an.</label>
-                        <input type="text" name="folgenanzahl" class="form-control" id="Dauer" aria-describedby="Dauer" placeholder="Folgenanzahl eingeben">
-                      </div>
-                    <br>
-                     <button type="submit" class="btn btn-primary">senden</button>
+                        <h1>Seriendauer</h1>
+                <p>Schaue wie lange du hast die Serien durchzusehen:</p>
+                <form method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label class="form-label">Bitte gib die Anzahl der Folgen an.</label>
+                            <select name="serie" class="form-select" aria-label="Default select example" >
+                                {% for items in liste %}
+                                <option name="folgen_anzahl"> {{ items }} </option>
+                                {% endfor %}
+                            </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">senden</button>
                 </form>
                 <br>
+                <h3>{{ watchtime2 }}</h3>
             </div>
 {% endblock %}

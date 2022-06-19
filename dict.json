@@ -1,14 +1,20 @@
 {
-  "Naruto": {
-    "anime_name": "Naruto",
-    "erscheinungsjahr": "2002",
-    "folgen_anzahl": "220",
-    "beschreibung": "Naruto Uzumaki, ein jugendlicher Ninja, k\u00c3\u00a4mpft auf der Suche nach Anerkennung und tr\u00c3\u00a4umt davon, der Hokage, der Anf\u00c3\u00bchrer und st\u00c3\u00a4rkste Ninja des Dorfes zu werden."
-  },
-  "One Piece": {
-    "anime_name": "One Piece",
-    "erscheinungsjahr": "1999",
-    "folgen_anzahl": "1023",
-    "beschreibung": "Folgt den Abenteuern von Monkey D. Luffy und seinen Freunden, um den gr\u00c3\u00b6\u00c3\u0178ten Schatz aller Zeiten zu finden, den der legend\u00c3\u00a4re Pirat Gol D Roger hinterlassen hat."
-  }
+    "Naruto": {
+        "Animename": "Naruto",
+        "erscheinungsjahr": "2002",
+        "Folgenanzahl": "220",
+        "beschreibung": "Naruto Uzumaki, ein jugendlicher Ninja, k\u00c3\u00a4mpft auf der Suche nach Anerkennung und tr\u00c3\u00a4umt davon, der Hokage, der Anf\u00c3\u00bchrer und st\u00c3\u00a4rkste Ninja des Dorfes zu werden."
+    },
+    "One Piece": {
+        "Animename": "One Piece",
+        "erscheinungsjahr": "1999",
+        "Folgenanzahl": "1023",
+        "beschreibung": "Folgt den Abenteuern von Monkey D. Luffy und seinen Freunden, um den gr\u00c3\u00b6ssten Schatz aller Zeiten zu finden, den der legend\u00c3\u00a4re Pirat Gol D Roger hinterlassen hat."
+    },
+    "Kuroko no basuke": {
+        "Animename": "Kuroko no basuke",
+        "Erscheinungsjahr": "2012",
+        "Folgenanzahl": "75",
+        "Beschreibung": "The Teiko Middle School Basketball Team. The school that produced three perfect seasons in a row, with five once-in-a generation players, called \"The Generation of Miracles.\" There was another player who all of them respected... A legendary 6th player. An up-and-coming power player, Taiga Kagami, is just back from America. When he comes to Seirin High School, he meets the super-ordinary boy, Tetsuya Kuroko. Kagami is shocked to find that Kuroko isn't good at basketball, in fact, he's bad! And he's so plain that he's impossible to see. But Kuroko's plainness lets him pass the ball around without the other team noticing him, and he's none other than the sixth member of the Miracle Generation. Kuroko makes a pact with Kagami to defeat the other members of the Miracle Generation, who have all played basketball at other schools. A battle of light (Kagami) and shadow (Kuroko) begins!"
+    }
 }

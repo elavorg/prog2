@@ -1,6 +1,7 @@
 {% extends "Header.html" %}
 {% block content %}
             <div class="container mt-5">
+                        <h1>Anime Eingabe</h1>
                 <p>Füge einen neuen Anime hinzu.</p>
                 <form method="POST">
                       <div class="form-group">
@@ -22,6 +23,7 @@
                     <br>
                      <button type="submit" class="btn btn-primary">senden</button>
                 </form>
+                <h3>{{rueckgabe_string}}</h3>
                 <br>
             </div>
 {% endblock %}

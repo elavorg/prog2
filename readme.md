@@ -6,6 +6,6 @@ Viele Animes sind lange und benötigen Zeit. Um sich einen besseren Überblick z
 Die Applikation ist so aufgebaut, dass man in der Navigation die entsprechende Funktion auswählen kann. Dazu stehen einem "Anime Auswahl", "Anime hinzufügen" und "Seriendauer" zur Verfügung.
 <h2>Workflow</h2>
 Die Daten werden in der Hinzufuegen.html erfasst und mittels der Python Datei daten.py verarbeitet. Diese werden dann in der Auswahl.html wieder ausgegeben, damit der Nutzer den hinzugefügten Anime anschauen kann.
- 
+Die Anime stehen dann in der Seriendauer.html zur Verfügung, um zu rechnen, wie lange der Anime in Stunden dauern wird. 
 
 
